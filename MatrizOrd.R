@@ -87,12 +87,6 @@ for(i in 1:23){
 
 mean_dists_crits# Vector de distancias criticas 
 
-
-# Exportar la matriz W_ord
-
-write.csv(W_ord, "W_ord.csv", row.names = FALSE)
-
-
 ####################### Construccion de la matriz W_ord   ######################
 
 W_ord<-matrix(0,nrow=23,ncol=23)
@@ -122,6 +116,9 @@ for(i in 1:23){
     }
   }
 }
+# Exportar la matriz W_ord
+
+write.csv(W_ord, "W_ord.csv", row.names = FALSE)
 
 ###############################################################################
 #               CODIGO NO PROBADO - NO ES PARTE TODAVIA                       #
